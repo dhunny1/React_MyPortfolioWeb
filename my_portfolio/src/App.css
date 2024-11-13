@@ -1,0 +1,154 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+/* <------------------------------------------------------ NavBar Start ------------------------------------------------------> */
+.SBar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+}
+
+.BarSide {
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.SidebarList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.SidebarList .row {
+  margin: 0 20px;
+  padding: 10px;
+  width: 100px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.SidebarList .row:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 5px #293846;
+  border-radius: 10px;
+}
+
+.SidebarList #active.row {
+  background-color: #293846;
+  color: white;
+  border-radius: 10px;
+}
+
+.LogoNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoCol {
+  margin-left: -310px;/*Keeps */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  margin-top: -20px;
+}
+
+.logo-container:hover {
+  cursor: pointer;
+}
+
+.logo-container img {
+  width: 100%;
+  height: auto;
+}
+
+.ContactNav {
+  list-style: none;
+  width: 100px;
+}
+
+.ContactNav .row {
+  text-align: center;
+  padding: 5px 0;
+  margin-top: -10px;
+}
+
+.ContactNav .row:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 5px #293846;
+  border-radius: 10px;
+}
+
+.ContactNav #active.row {
+  background-color: #293846;
+  color: white;
+  cursor: pointer;  
+  border-radius: 10px;
+}
+/* <------------------------------------------------------ NavBar ENDS ------------------------------------------------------> */
+
+.herosec {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #293846;
+  color: white;
+}
+
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #FDFFFF;
+  color: #293846;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+  box-shadow: 0px 0px 10px #283846;
+  
+}
+
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .BarSide {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  .herosec {
+    height: auto;
+    overflow-y: auto;
+  }
+}
